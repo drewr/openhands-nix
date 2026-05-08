@@ -48,11 +48,11 @@
         apps = {
           default = {
             type = "app";
-            program = "${openhands-cli}/bin/openhands-acp";
-          };
-          openhands = {
-            type = "app";
             program = "${openhands-cli}/bin/openhands";
+          };
+          acp = {
+            type = "app";
+            program = "${openhands-cli}/bin/openhands-acp";
           };
         };
 
