@@ -61,7 +61,7 @@ symlinkJoin {
   meta = {
     description = "OpenHands CLI — ACP-enabled coding agent for local and cloud LLMs";
     homepage = "https://github.com/OpenHands/OpenHands-CLI";
-    license = lib.licenses.mit;
+    license = lib.licenses.asl20;
     mainProgram = "openhands-acp";
   };
 }
