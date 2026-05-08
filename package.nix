@@ -54,7 +54,9 @@ symlinkJoin {
   postBuild = ''
     rm $out/bin/openhands-acp
     makeWrapper ${virtualenv}/bin/openhands $out/bin/openhands-acp \
-      --add-flags acp
+      --add-flags "acp --override-with-envs"
+    wrapProgram $out/bin/openhands \
+      --add-flags "--override-with-envs"
   '';
   meta = {
     description = "OpenHands CLI — ACP-enabled coding agent for local and cloud LLMs";
