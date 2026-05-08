@@ -2,7 +2,7 @@ name: Update openhands-cli
 
 on:
   schedule:
-    - cron: '0 * * * *'  # hourly
+    - cron: '0 11 * * *'  # 05:00 US Central (UTC-6)
   workflow_dispatch:
 
 jobs:
